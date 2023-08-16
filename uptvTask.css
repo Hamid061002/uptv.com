@@ -3,16 +3,18 @@ body {
     font-family: Sans;
 }
 
+
 @media screen and (min-width:1350px) {
     .menuBar{
         display: none;
     }
 
     header {
-        background-color: rgba(0, 0, 0, 0.703);
+        background-color: rgba(0, 0, 0, 0.7);
         position: fixed;
         padding: 0 5px 0 10px;
         width: 100%;
+        backdrop-filter: blur(2px);
     }
 
     header>div {
@@ -22,7 +24,6 @@ body {
         display: grid;
         grid-template-columns: 314fr 906fr 95.5fr;
         align-items: center;
-
     }
 
     .search {
@@ -47,7 +48,6 @@ body {
     }
 
     .search>button {
-        backdrop-filter: blur(20px);
         background-color: #191919;
         padding: 10px 10px 10px 20px;
         border: none;
@@ -101,7 +101,7 @@ body {
         top: 40px;
         padding: 10px 15px 10px 40px;
         background-color: rgba(0, 0, 0, 0.703);
-        transition: all 0.5s;
+        transition: all 0.3s;
     }
 
     .filmIrani {
@@ -133,7 +133,7 @@ body {
     .navbar>nav>li:hover>nav {
         opacity: 1;
         visibility: visible;
-
+        backdrop-filter: blur(2px);
     }
 
     .navbar>nav>li>nav>li>a {
@@ -203,7 +203,6 @@ body {
     }
 
     .search>button {
-        backdrop-filter: blur(20px);
         background-color: #191919;
         padding: 10px;
         border: none;
@@ -359,7 +358,6 @@ body {
     }
 
     .search>button {
-        backdrop-filter: blur(20px);
         background-color: #191919;
         padding: 10px;
         border: none;
@@ -517,7 +515,6 @@ body {
     }
 
     .search>button {
-        backdrop-filter: blur(20px);
         background-color: #191919;
         padding: 10px;
         border: none;

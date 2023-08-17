@@ -14,7 +14,7 @@ body {
         position: fixed;
         padding: 0 5px 0 10px;
         width: 100%;
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(5px);
     }
 
     header>div {
@@ -160,6 +160,81 @@ body {
         align-self: center;
         padding: 5px 0 5px 5px;
     }
+
+    .allMovieSection{
+        width: 100%;
+        background-color: #101014;
+        text-align: center;
+        padding-top: 86px;
+    }
+    .allMovieSection>div{
+        width: 1310px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 5px;
+        margin: 0 auto;
+    }
+    .allMovieSection>div>a{
+        list-style: none;
+        text-decoration: none;
+    }
+    #HeartOfStone{
+        background-image: url(Heart-of-Stone-2023-Header.jpg);
+    }
+    #Oppenheimer{
+        background-image: url(Oppenheimer-2023-Header.jpg);
+    }
+    #Meg2TheTrench{
+        background-image: url(Meg-2-The-Trench-2023-Header.jpg);
+    }
+    #TheThreeMusketeersDArtagnan{
+        background-image: url(The-Three-Musketeers-DArtagnan-2023-Header.jpg);
+    }
+    #LittleBoneLodge{
+        background-image: url(Little-Bone-Lodge-2023-Header.jpg);
+    }
+    #InsidiousTheRedDoor{
+        background-image: url(Insidious-The-Red-Door-2023-Header.jpg);
+    }
+    #PedarGoradilioHeader{
+        background-image: url(Pedar-Goradilio-Header.jpg);
+    }
+    #mansion{
+        background-image: url(mansion-1-Header-e1691659844842.jpg);
+    }
+    #Quicksand{
+        background-image: url(Quicksand-2023-Header.jpg);
+    }
+    #TheFlood{
+        background-image: url(The-Flood-2023-Header.jpg);
+    }
+    #EpicTailsHeader{
+        background-image: url(Epic-Tails-2022-Header.jpg);
+    }
+    #LadybugAndCatNoirAwakening{
+        background-image: url(Ladybug-and-Cat-Noir-Awakening-2023-Header.jpg);
+    }
+
+    #HeartOfStone,#Oppenheimer,#Meg2TheTrench,#TheThreeMusketeersDArtagnan,#LittleBoneLodge,#InsidiousTheRedDoor,#PedarGoradilioHeader,#mansion,#Quicksand, #TheFlood,#EpicTailsHeader,#LadybugAndCatNoirAwakening{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 4px;
+        height: 180px;
+        width: 313px;
+        margin: 0 auto;
+        text-align: end;
+    }
+
+    #HeartOfStone>div,#Oppenheimer>div,#Meg2TheTrench>div,#TheThreeMusketeersDArtagnan>div,#LittleBoneLodge>div,#InsidiousTheRedDoor>div,#PedarGoradilioHeader>div,#mansion>div,#Quicksand>div,#TheFlood>div,#EpicTailsHeader>div,#LadybugAndCatNoirAwakening>div{
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 40px 15px 0 0;
+        backdrop-filter: blur(1px);
+        color: #999;
+        height: 100%;
+    }
+    
 }
 @media screen and (max-width:1350px) and (min-width:1200px) {
     .menuBar{
@@ -314,6 +389,77 @@ body {
         direction: ltr;
         align-self: center;
         padding: 5px;
+    }
+
+    
+    .allMovieSection{
+        width: 100%;
+        background-color: #101014;
+        text-align: center;
+        padding-top: 86px;
+    }
+    .allMovieSection>div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 5px;
+        margin: 0 auto;
+    }
+    .allMovieSection>div>a{
+        list-style: none;
+        text-decoration: none;
+    }
+    #HeartOfStone{
+        background-image: url(Heart-of-Stone-2023-Header.jpg);
+    }
+    #Oppenheimer{
+        background-image: url(Oppenheimer-2023-Header.jpg);
+    }
+    #Meg2TheTrench{
+        background-image: url(Meg-2-The-Trench-2023-Header.jpg);
+    }
+    #TheThreeMusketeersDArtagnan{
+        background-image: url(The-Three-Musketeers-DArtagnan-2023-Header.jpg);
+    }
+    #LittleBoneLodge{
+        background-image: url(Little-Bone-Lodge-2023-Header.jpg);
+    }
+    #InsidiousTheRedDoor{
+        background-image: url(Insidious-The-Red-Door-2023-Header.jpg);
+    }
+    #PedarGoradilioHeader{
+        background-image: url(Pedar-Goradilio-Header.jpg);
+    }
+    #mansion{
+        background-image: url(mansion-1-Header-e1691659844842.jpg);
+    }
+    #Quicksand{
+        background-image: url(Quicksand-2023-Header.jpg);
+    }
+    #TheFlood{
+        background-image: url(The-Flood-2023-Header.jpg);
+    }
+    #EpicTailsHeader{
+        background-image: url(Epic-Tails-2022-Header.jpg);
+    }
+    #LadybugAndCatNoirAwakening{
+        background-image: url(Ladybug-and-Cat-Noir-Awakening-2023-Header.jpg);
+    }
+
+    #HeartOfStone,#Oppenheimer,#Meg2TheTrench,#TheThreeMusketeersDArtagnan,#LittleBoneLodge,#InsidiousTheRedDoor,#PedarGoradilioHeader,#mansion,#Quicksand, #TheFlood,#EpicTailsHeader,#LadybugAndCatNoirAwakening{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 4px;
+        height: 180px;
+        width: 313px;
+        margin: 0 auto;
+    }
+
+    #HeartOfStone>div,#Oppenheimer>div,#Meg2TheTrench>div,#TheThreeMusketeersDArtagnan>div,#LittleBoneLodge>div,#InsidiousTheRedDoor>div,#PedarGoradilioHeader>div,#mansion>div,#Quicksand>div,#TheFlood>div,#EpicTailsHeader>div,#LadybugAndCatNoirAwakening>div{
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(3px);
     }
 }
 @media screen and (max-width:1200px) and (min-width:1000px) {

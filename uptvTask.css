@@ -1,11 +1,11 @@
 body {
-    background-color: black;
+    background-color: #101014;
     font-family: Sans;
 }
 
 
 @media screen and (min-width:1350px) {
-    .menuBar{
+    .menuBar {
         display: none;
     }
 
@@ -54,7 +54,8 @@ body {
         border: none;
         border-radius: 5px 0px 0 5px;
     }
-    button>svg{    
+
+    button>svg {
         stroke: #9ba1a6;
     }
 
@@ -162,90 +163,88 @@ body {
         padding: 5px 0 5px 5px;
     }
 
-    .allMovieSection{
+    .allMovieSection {
         width: 100%;
         background-color: #101014;
         text-align: center;
         padding-top: 86px;
     }
-    .allMovieSection>div{
+
+    .allMovieSection>div {
         width: 1310px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-row-gap: 20px;
         grid-column-gap: 20px;
         margin: 0 auto;
+        margin-bottom: 30px;
     }
-    .allMovieSection>div>a{
+
+    .moviePooster {
+        position: relative;
+        margin: 0 auto;
+        text-align: end;
         list-style: none;
         text-decoration: none;
     }
-    #HeartOfStone{
-        background-image: url(Heart-of-Stone-2023-Header.jpg);
-    }
-    #Oppenheimer{
-        background-image: url(Oppenheimer-2023-Header.jpg);
-    }
-    #Meg2TheTrench{
-        background-image: url(Meg-2-The-Trench-2023-Header.jpg);
-    }
-    #TheThreeMusketeersDArtagnan{
-        background-image: url(The-Three-Musketeers-DArtagnan-2023-Header.jpg);
-    }
-    #LittleBoneLodge{
-        background-image: url(Little-Bone-Lodge-2023-Header.jpg);
-    }
-    #InsidiousTheRedDoor{
-        background-image: url(Insidious-The-Red-Door-2023-Header.jpg);
-    }
-    #PedarGoradilioHeader{
-        background-image: url(Pedar-Goradilio-Header.jpg);
-    }
-    #mansion{
-        background-image: url(mansion-1-Header-e1691659844842.jpg);
-    }
-    #Quicksand{
-        background-image: url(Quicksand-2023-Header.jpg);
-    }
-    #TheFlood{
-        background-image: url(The-Flood-2023-Header.jpg);
-    }
-    #EpicTailsHeader{
-        background-image: url(Epic-Tails-2022-Header.jpg);
-    }
-    #LadybugAndCatNoirAwakening{
-        background-image: url(Ladybug-and-Cat-Noir-Awakening-2023-Header.jpg);
-    }
 
-    .moviePooster{
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+    .moviePooster>img {
         border-radius: 4px;
-        height: 180px;
-        width: 313px;
-        margin: 0 auto;
-        text-align: end;
     }
 
-    .moviePooster>div{
+    .moviePooster>div {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
         background-color: rgba(0, 0, 0, 0.7);
-        padding: 40px 15px 0 0;
+        padding: 30px 15px 0 0;
         backdrop-filter: blur(1px);
         color: #999;
         height: 100%;
+        width: 100%;
         visibility: hidden;
         opacity: 0;
         transition: all 0.3s;
         cursor: pointer;
     }
-    .moviePooster:hover>div{
+
+    .moviePooster:hover>div {
         visibility: visible;
         opacity: 1;
     }
+
+    .allMovieSection>nav {
+        background-color: #23232b;
+        border-radius: 5px;
+        width: 1310px;
+        margin: 0 auto;
+        padding: 15px 10px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 20px;
+        direction: rtl;
+    }
+
+    .allMovieSection>nav>button {
+        background-color: #1c1c22;
+        border-radius: 5px;
+        color: white;
+        width: 100%;
+        border: none;
+        padding: 12px 20px 12px 10px;
+        text-align: start;
+        font-size: 14px;
+    }
+
+    .allMovieSection>nav>button:last-child {
+        background-color: #6898f8;
+        text-align: center;
+    }
 }
+
 @media screen and (max-width:1350px) and (min-width:1200px) {
-    .menuBar{
+    .menuBar {
         display: none;
     }
 
@@ -254,6 +253,8 @@ body {
         position: fixed;
         padding: 15px 10px 15px 30px;
         width: 100%;
+        z-index: 2;
+        backdrop-filter: blur(5px);
     }
 
     header>div {
@@ -291,7 +292,8 @@ body {
         border: none;
         border-radius: 5px 0px 0 5px;
     }
-    button>svg{    
+
+    button>svg {
         stroke: #9ba1a6;
     }
 
@@ -371,7 +373,8 @@ body {
     .navbar>nav>li:hover>nav {
         opacity: 1;
         visibility: visible;
-
+        z-index: 3;
+        backdrop-filter: blur(3px);
     }
 
     .navbar>nav>li>nav>li>a {
@@ -399,87 +402,100 @@ body {
         padding: 5px;
     }
 
-    
-    .allMovieSection{
-        width: 100%;
+
+    .allMovieSection {
         background-color: #101014;
-        text-align: center;
         padding-top: 86px;
     }
-    .allMovieSection>div{
-        width: 100%;
+
+    .allMovieSection>div {
+        width: 96%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-row-gap: 20px;
-        grid-column-gap: 5px;
+        grid-column-gap: 20px;
         margin: 0 auto;
+        margin-bottom: 30px;
     }
-    .allMovieSection>div>a{
+
+    .moviePooster {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        text-align: end;
         list-style: none;
         text-decoration: none;
-    }
-    #HeartOfStone{
-        background-image: url(Heart-of-Stone-2023-Header.jpg);
-    }
-    #Oppenheimer{
-        background-image: url(Oppenheimer-2023-Header.jpg);
-    }
-    #Meg2TheTrench{
-        background-image: url(Meg-2-The-Trench-2023-Header.jpg);
-    }
-    #TheThreeMusketeersDArtagnan{
-        background-image: url(The-Three-Musketeers-DArtagnan-2023-Header.jpg);
-    }
-    #LittleBoneLodge{
-        background-image: url(Little-Bone-Lodge-2023-Header.jpg);
-    }
-    #InsidiousTheRedDoor{
-        background-image: url(Insidious-The-Red-Door-2023-Header.jpg);
-    }
-    #PedarGoradilioHeader{
-        background-image: url(Pedar-Goradilio-Header.jpg);
-    }
-    #mansion{
-        background-image: url(mansion-1-Header-e1691659844842.jpg);
-    }
-    #Quicksand{
-        background-image: url(Quicksand-2023-Header.jpg);
-    }
-    #TheFlood{
-        background-image: url(The-Flood-2023-Header.jpg);
-    }
-    #EpicTailsHeader{
-        background-image: url(Epic-Tails-2022-Header.jpg);
-    }
-    #LadybugAndCatNoirAwakening{
-        background-image: url(Ladybug-and-Cat-Noir-Awakening-2023-Header.jpg);
+        position: relative;
     }
 
-    #HeartOfStone,#Oppenheimer,#Meg2TheTrench,#TheThreeMusketeersDArtagnan,#LittleBoneLodge,#InsidiousTheRedDoor,#PedarGoradilioHeader,#mansion,#Quicksand, #TheFlood,#EpicTailsHeader,#LadybugAndCatNoirAwakening{
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+    .moviePooster>img {
         border-radius: 4px;
-        height: 180px;
-        width: 313px;
-        margin: 0 auto;
+        width: 100%;
+        height: 100%;
     }
 
-    #HeartOfStone>div,#Oppenheimer>div,#Meg2TheTrench>div,#TheThreeMusketeersDArtagnan>div,#LittleBoneLodge>div,#InsidiousTheRedDoor>div,#PedarGoradilioHeader>div,#mansion>div,#Quicksand>div,#TheFlood>div,#EpicTailsHeader>div,#LadybugAndCatNoirAwakening>div{
-        background-color: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(3px);
+    .moviePooster>div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 30px 15px 0 0;
+        backdrop-filter: blur(1px);
+        color: #999;
+        height: 100%;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .moviePooster:hover>div {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .allMovieSection>nav {
+        background-color: #23232b;
+        border-radius: 5px;
+        width: 96%;
+        margin: 0 auto;
+        padding: 15px 10px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 20px;
+        direction: rtl;
+    }
+
+    .allMovieSection>nav>button {
+        background-color: #1c1c22;
+        border-radius: 5px;
+        color: white;
+        width: 100%;
+        border: none;
+        padding: 12px 20px 12px 10px;
+        text-align: start;
+        font-size: 14px;
+    }
+
+    .allMovieSection>nav>button:last-child {
+        background-color: #6898f8;
+        text-align: center;
     }
 }
+
 @media screen and (max-width:1200px) and (min-width:1000px) {
-    .menuBar{
+    .menuBar {
         display: none;
     }
-    
+
     header {
         background-color: rgba(0, 0, 0, 0.703);
         position: fixed;
         padding: 15px 10px 15px 30px;
         width: 100%;
+        backdrop-filter: blur(5px);
+        z-index: 2;
     }
 
     header>div {
@@ -518,9 +534,10 @@ body {
         border-radius: 5px 0px 0 5px;
     }
 
-    button>svg{    
+    button>svg {
         stroke: #9ba1a6;
     }
+
     .navbar {
         direction: rtl;
         padding: 10px 20px 0 20px;
@@ -598,7 +615,7 @@ body {
     .navbar>nav>li:hover>nav {
         opacity: 1;
         visibility: visible;
-
+        z-index: 3;
     }
 
     .navbar>nav>li>nav>li>a {
@@ -626,17 +643,99 @@ body {
         padding: 5px;
     }
 
+    .allMovieSection {
+        background-color: #101014;
+        padding-top: 128px;
+    }
+
+    .allMovieSection>div {
+        width: 96%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .moviePooster {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        text-align: end;
+        list-style: none;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .moviePooster>img {
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .moviePooster>div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px 10px 0 0;
+        backdrop-filter: blur(1px);
+        color: #999;
+        height: 100%;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .moviePooster:hover>div {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .allMovieSection>nav {
+        background-color: #23232b;
+        border-radius: 5px;
+        width: 96%;
+        margin: 0 auto;
+        padding: 15px 10px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 20px;
+        direction: rtl;
+    }
+
+    .allMovieSection>nav>button {
+        background-color: #1c1c22;
+        border-radius: 5px;
+        color: white;
+        width: 100%;
+        border: none;
+        padding: 12px 10px 12px 10px;
+        text-align: start;
+        font-size: 13px;
+    }
+
+    .allMovieSection>nav>button:last-child {
+        background-color: #6898f8;
+        text-align: center;
+    }
 }
+
 @media screen and (max-width:1000px) and (min-width:600px) {
-    .navbar{
+    .navbar {
         display: none;
     }
-    
+
     header {
         background-color: rgba(0, 0, 0, 0.703);
         position: fixed;
         padding: 15px 10px 15px 30px;
         width: 100%;
+        z-index: 1;
+        backdrop-filter: blur(5px);
     }
 
     header>div {
@@ -674,7 +773,8 @@ body {
         border: none;
         border-radius: 5px 0px 0 5px;
     }
-    button>svg{    
+
+    button>svg {
         stroke: #9ba1a6;
     }
 
@@ -783,7 +883,7 @@ body {
         padding: 5px 5px 5px 10px;
     }
 
-    .menuBar{
+    .menuBar {
         background-image: url(menu-button-of-three-horizontal-lines.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -793,18 +893,77 @@ body {
         margin-left: 7px;
         margin-right: 8px;
     }
-}
-@media screen and (max-width:600px) {
-    
-    .navbar{
+
+    .allMovieSection {
+        background-color: #101014;
+        padding-top: 86px;
+    }
+
+    .allMovieSection>div {
+        width: 96%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .moviePooster {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        text-align: end;
+        list-style: none;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .moviePooster>img {
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .moviePooster>div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px 10px 0 0;
+        backdrop-filter: blur(1px);
+        color: #999;
+        height: 100%;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .moviePooster:hover>div {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .allMovieSection>nav {
         display: none;
     }
-    
+}
+
+@media screen and (max-width:600px) {
+
+    .navbar {
+        display: none;
+    }
+
     header {
         background-color: rgba(0, 0, 0, 0.703);
         position: fixed;
         padding: 15px 10px 15px 20px;
         width: 100%;
+        z-index: 1;
+        backdrop-filter: blur(5px);
     }
 
     header>div {
@@ -843,7 +1002,8 @@ body {
         border: none;
         border-radius: 5px 0px 0 5px;
     }
-    button>svg{    
+
+    button>svg {
         stroke: white;
     }
 
@@ -953,7 +1113,7 @@ body {
         padding: 5px 5px 5px 10px;
     }
 
-    .menuBar{
+    .menuBar {
         background-image: url(menu-button-of-three-horizontal-lines.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -964,13 +1124,77 @@ body {
         margin-right: 8px;
     }
 
+    .allMovieSection {
+        background-color: #101014;
+        padding-top: 86px;
+    }
+
+    .allMovieSection>div {
+        direction: rtl;
+        /* width: 96%; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        overflow-x: scroll;
+        padding: 0 15px;
+    }
+
+    .moviePooster {
+        width: 277px;
+        height: 159px;
+        margin: 0 auto;
+        text-align: end;
+        list-style: none;
+        text-decoration: none;
+        position: relative;
+    }
+    
+    .moviePooster:last-child{
+        margin-bottom: 30px;
+    }
+
+    .moviePooster>img {
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .moviePooster>div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px 10px 0 0;
+        backdrop-filter: blur(1px);
+        color: #999;
+        height: 100%;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+        cursor: pointer;
+        text-align: start;
+    }
+
+    .moviePooster:hover>div {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .allMovieSection>nav{
+        display: none;
+    }
 }
 
 @font-face {
     font-family: Sans;
     src: url(Sans\ a4fran3.ttf);
 }
-footer{
+
+footer {
     background-image: url(sss.png);
     background-size: contain;
     background-repeat: no-repeat;

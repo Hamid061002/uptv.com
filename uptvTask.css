@@ -15,7 +15,7 @@ body {
         padding: 0 5px 0 10px;
         width: 100%;
         backdrop-filter: blur(5px);
-        z-index: 1;
+        z-index: 3;
     }
 
     header>div {
@@ -240,6 +240,111 @@ body {
     .allMovieSection>nav>button:last-child {
         background-color: #6898f8;
         text-align: center;
+    }
+
+    .section2{
+        background-color: #1c1c22;
+    }
+
+    .movieSliders{
+        width: 1345px;
+        height: 100%;
+        padding: 0 15px 30px;
+        margin: 0 auto;
+        
+    }
+
+    .movieSliders>div:first-child{
+        padding-top: 40px;
+        height: 42px;
+    }
+
+    .movieSliders>div:first-child>a{
+        list-style: none;
+        color: #6898f8;
+        font-size: 11px;
+        text-decoration: none;
+        float: left;
+    }
+
+    .movieSliders>div:first-child>span{
+        color: #e8eaf0 ;
+        font-size: 17px;
+        float: right;
+        cursor: pointer;
+    }
+
+    .slides{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-column-gap: 20px;
+        cursor: pointer;        
+    }
+    .slides>div{
+        border-radius: 5px;
+        text-align: end;
+        position: relative;
+    }
+    .slides>div>img{
+        height: fit-content;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .slides>div>p{
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 600;
+        color: #c6c9cc !important;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    .slides>div>p:hover{
+        color: #B8daff !important;
+    }
+    .goldBox{
+        position: absolute;
+        bottom: 17%;
+        left: 7px;
+        z-index: 3;
+        background-color: #f6b828;
+        font-size: 10px;
+        padding: 2px;
+        border-radius: 5px;
+    }
+    .slides>div>img{
+        position: relative;
+    }
+    .slidesHover{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        padding-top: 121%;
+        padding-right: 7px;
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0),#1010141f,#101014);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .slides>div:hover>.slidesHover{
+        visibility: visible;
+        opacity: 1;
+    }
+    .slidesHover>div:first-child{
+        font-size: 11px;
+    }
+    .slidesHover>div:last-child{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .slidesHover>div:last-child::after{
+        content: ' IMDb';
+        color: #8e939b;
+        font-weight: bold;
     }
 }
 
@@ -482,6 +587,111 @@ body {
         background-color: #6898f8;
         text-align: center;
     }
+
+    .section2{
+        background-color: #1c1c22;
+    }
+
+    .movieSliders{
+        width: 100%;
+        height: 100%;
+        padding: 0 20px 10px;
+        margin: 0 auto;
+        
+    }
+
+    .movieSliders>div:first-child{
+        padding-top: 40px;
+        height: 42px;
+    }
+
+    .movieSliders>div:first-child>a{
+        list-style: none;
+        color: #6898f8;
+        font-size: 11px;
+        text-decoration: none;
+        float: left;
+    }
+
+    .movieSliders>div:first-child>span{
+        color: #e8eaf0 ;
+        font-size: 17px;
+        float: right;
+        cursor: pointer;
+    }
+
+    .slides{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-column-gap: 20px;
+        cursor: pointer;        
+    }
+    .slides>div{
+        border-radius: 5px;
+        text-align: end;
+        position: relative;
+    }
+    .slides>div>img{
+        height: fit-content;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .slides>div>p{
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 600;
+        color: #c6c9cc !important;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    .slides>div>p:hover{
+        color: #B8daff !important;
+    }
+    .goldBox{
+        position: absolute;
+        bottom: 17%;
+        left: 7px;
+        z-index: 3;
+        background-color: #f6b828;
+        font-size: 10px;
+        padding: 2px;
+        border-radius: 5px;
+    }
+    .slides>div>img{
+        position: relative;
+    }
+    .slidesHover{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        padding-top: 121%;
+        padding-right: 7px;
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0),#1010141f,#101014);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .slides>div:hover>.slidesHover{
+        visibility: visible;
+        opacity: 1;
+    }
+    .slidesHover>div:first-child{
+        font-size: 11px;
+    }
+    .slidesHover>div:last-child{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .slidesHover>div:last-child::after{
+        content: ' IMDb';
+        color: #8e939b;
+        font-weight: bold;
+    }
 }
 
 @media screen and (max-width:1200px) and (min-width:1000px) {
@@ -722,6 +932,117 @@ body {
         background-color: #6898f8;
         text-align: center;
     }
+
+    .section2{
+        background-color: #1c1c22;
+    }
+
+    .movieSliders{
+        width: 100%;
+        height: 100%;
+        padding: 0 20px 10px;
+        margin: 0 auto;
+        
+    }
+
+    .movieSliders>div:first-child{
+        padding-top: 40px;
+        height: 42px;
+    }
+
+    .movieSliders>div:first-child>a{
+        list-style: none;
+        color: #6898f8;
+        font-size: 11px;
+        text-decoration: none;
+        float: left;
+    }
+
+    .movieSliders>div:first-child>span{
+        color: #e8eaf0 ;
+        font-size: 17px;
+        float: right;
+        cursor: pointer;
+    }
+
+    .slides{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-column-gap: 20px;
+        cursor: pointer;        
+    }
+    .slides>div{
+        border-radius: 5px;
+        text-align: end;
+        position: relative;
+    }
+    .slides>div>img{
+        height: fit-content;
+        width: 100%;
+        height: 255px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .slides>div>p{
+        text-decoration: none;
+        height: 18px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #c6c9cc !important;
+        cursor: pointer;
+        transition: all 0.2s;
+        overflow-x: auto;
+    }
+    .slides>div>p::-webkit-scrollbar{
+        width: 0;
+    }
+    .slides>div>p:hover{
+        color: #B8daff !important;
+    }
+    .goldBox{
+        position: absolute;
+        bottom: 55px;
+        left: 7px;
+        z-index: 3;
+        background-color: #f6b828;
+        font-size: 10px;
+        padding: 2px;
+        border-radius: 5px;
+    }
+    .slides>div>img{
+        position: relative;
+    }
+    .slidesHover{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 255px;
+        padding-top: 121%;
+        padding-right: 7px;
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0),#1010141f,#101014);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .slides>div:hover>.slidesHover{
+        visibility: visible;
+        opacity: 1;
+    }
+    .slidesHover>div:first-child{
+        font-size: 11px;
+    }
+    .slidesHover>div:last-child{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .slidesHover>div:last-child::after{
+        content: ' IMDb';
+        color: #8e939b;
+        font-weight: bold;
+    }
 }
 
 @media screen and (max-width:1000px) and (min-width:600px) {
@@ -949,6 +1270,222 @@ body {
     .allMovieSection>nav {
         display: none;
     }
+
+    .section2{
+        background-color: #1c1c22;
+    }
+
+    .movieSliders{
+        width: 100%;
+        height: 100%;
+        padding: 0 20px 10px;
+        margin: 0 auto;
+        
+    }
+
+    .movieSliders>div:first-child{
+        padding-top: 40px;
+        height: 42px;
+    }
+
+    .movieSliders>div:first-child>a{
+        list-style: none;
+        color: #6898f8;
+        font-size: 11px;
+        text-decoration: none;
+        float: left;
+    }
+
+    .movieSliders>div:first-child>span{
+        color: #e8eaf0 ;
+        font-size: 17px;
+        float: right;
+        cursor: pointer;
+    }
+
+    .slides{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-column-gap: 20px;
+        cursor: pointer;        
+    }
+    .slides>div{
+        border-radius: 5px;
+        text-align: end;
+        position: relative;
+    }
+    .slides>div>img{
+        height: fit-content;
+        width: 100%;
+        height: 70%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .slides>div>p{
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 600;
+        color: #c6c9cc !important;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    .slides>div>p:hover{
+        color: #B8daff !important;
+    }
+    .goldBox{
+        position: absolute;
+        bottom: 35%;
+        left: 7px;
+        z-index: 3;
+        background-color: #f6b828;
+        font-size: 10px;
+        padding: 2px;
+        border-radius: 5px;
+    }
+    .slides>div>img{
+        position: relative;
+    }
+    .slidesHover{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        padding-top: 95%;
+        padding-right: 7px;
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0),#1010141f,#101014);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .slides>div:hover>.slidesHover{
+        visibility: visible;
+        opacity: 1;
+    }
+    .slidesHover>div:first-child{
+        font-size: 11px;
+    }
+    .slidesHover>div:last-child{
+        margin-top: 5px;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .slidesHover>div:last-child::after{
+        content: ' IMDb';
+        color: #8e939b;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:600px) {
+    .section2{
+        background-color: #1c1c22;
+    }
+
+    .movieSliders{
+        width: 100%;
+        height: 100%;
+        padding: 0 20px 10px;
+        margin: 0 auto;
+        
+    }
+
+    .movieSliders>div:first-child{
+        padding-top: 40px;
+        height: 42px;
+    }
+
+    .movieSliders>div:first-child>a{
+        list-style: none;
+        color: #6898f8;
+        font-size: 11px;
+        text-decoration: none;
+        float: left;
+    }
+
+    .movieSliders>div:first-child>span{
+        color: #e8eaf0 ;
+        font-size: 17px;
+        float: right;
+        cursor: pointer;
+    }
+
+    .slides{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-column-gap: 20px;
+        cursor: pointer;        
+    }
+    .slides>div{
+        border-radius: 5px;
+        text-align: end;
+        position: relative;
+    }
+    .slides>div>img{
+        height: fit-content;
+        width: 100%;
+        height: 65%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .slides>div>p{
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 600;
+        color: #c6c9cc !important;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    .slides>div>p:hover{
+        color: #B8daff !important;
+    }
+    .goldBox{
+        position: absolute;
+        bottom: 35%;
+        left: 7px;
+        z-index: 3;
+        background-color: #f6b828;
+        font-size: 10px;
+        padding: 2px;
+        border-radius: 5px;
+    }
+    .slides>div>img{
+        position: relative;
+    }
+    .slidesHover{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        padding-top: 95%;
+        padding-right: 7px;
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0),#1010141f,#101014);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .slides>div:hover>.slidesHover{
+        visibility: visible;
+        opacity: 1;
+    }
+    .slidesHover>div:first-child{
+        font-size: 11px;
+    }
+    .slidesHover>div:last-child{
+        margin-top: 5px;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .slidesHover>div:last-child::after{
+        content: ' IMDb';
+        color: #8e939b;
+        font-weight: bold;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -962,7 +1499,7 @@ body {
         position: fixed;
         padding: 15px 10px 15px 20px;
         width: 100%;
-        z-index: 1;
+        z-index: 4;
         backdrop-filter: blur(5px);
     }
 
@@ -1186,6 +1723,119 @@ body {
 
     .allMovieSection>nav{
         display: none;
+    }
+
+    .section2{
+        background-color: #1c1c22;
+    }
+
+    .movieSliders{
+        width: 100%;
+        height: 100%;
+        padding: 0 20px 10px;
+        margin: 0 auto;
+        
+    }
+
+    .movieSliders>div:first-child{
+        padding-top: 40px;
+        height: 42px;
+    }
+
+    .movieSliders>div:first-child>a{
+        list-style: none;
+        color: #6898f8;
+        font-size: 11px;
+        text-decoration: none;
+        float: left;
+    }
+
+    .movieSliders>div:first-child>span{
+        color: #e8eaf0 ;
+        font-size: 17px;
+        float: right;
+        cursor: pointer;
+    }
+
+    .slides{
+        direction: rtl;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-column-gap: 20px;
+        cursor: pointer;
+        overflow-x: auto;    
+    }
+    .slides>div{
+        border-radius: 5px;
+        text-align: start;
+        position: relative;
+    }
+    .slides>div>img{
+        height: fit-content;
+        width: 140px;
+        height: 208px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .slides>div>p{
+        text-decoration: none;
+        height: 18px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #c6c9cc !important;
+        cursor: pointer;
+        transition: all 0.2s;
+        overflow-x: auto;
+    }
+    .slides>div>p::-webkit-scrollbar{
+        width: 0;
+    }
+    .slides>div>p:hover{
+        color: #B8daff !important;
+    }
+    .goldBox{
+        position: absolute;
+        bottom: 55px;
+        left: 7px;
+        z-index: 3;
+        background-color: #f6b828;
+        font-size: 10px;
+        padding: 2px;
+        border-radius: 5px;
+    }
+    .slides>div>img{
+        position: relative;
+    }
+    .slidesHover{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 208px;
+        padding-top: 110%;
+        padding-right: 7px;
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0),#1010141f,#101014);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .slides>div:hover>.slidesHover{
+        visibility: visible;
+        opacity: 1;
+    }
+    .slidesHover>div:first-child{
+        font-size: 11px;
+    }
+    .slidesHover>div:last-child{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .slidesHover>div:last-child::after{
+        content: ' IMDb';
+        color: #8e939b;
+        font-weight: bold;
     }
 }
 

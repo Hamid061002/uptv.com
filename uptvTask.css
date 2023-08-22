@@ -376,6 +376,7 @@ body {
         padding: 5px;
         background-color: #23232b;
         margin-bottom: 20px;
+        cursor: pointer;
     }
 
     .updateSerial {
@@ -398,6 +399,11 @@ body {
         font-size: 13px;
         color: #c6c9cc !important;
         float: left;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    .updateSerial>a:hover{
+        color: #B8daff !important;
     }
 
     .updateSerial>div {
@@ -409,7 +415,9 @@ body {
     .moviesPicturesLeftSection {
         width: 314px;
         height: 90px;
+        margin-bottom: 15px;
         position: relative;
+        cursor: pointer;
     }
 
     .moviesPicturesLeftSection>img {
@@ -430,6 +438,13 @@ body {
     }
 
     .moviesPicturesLeftSection>div>span:first-child {
+        float: right;
+        font-size: 12px;
+        align-self: center;
+        padding: 3px 0;
+    }
+
+    .moviesPicturesLeftSection>div>span:last-child {
         float: left;
         text-align: end;
         direction: rtl;
@@ -439,13 +454,12 @@ body {
         padding: 3px 5px;
     }
 
-    .moviesPicturesLeftSection>div>span:last-child {
-        float: right;
-        font-size: 12px;
-        align-self: center;
+    .rightSection3{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
     }
-
-    .rightSection3 {
+    .rightSection3>div{
         background-color: #23232b;
         border-radius: 4px;
         margin: 0 10px 20px 20px;

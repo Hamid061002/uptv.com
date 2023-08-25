@@ -3,7 +3,6 @@ body {
     font-family: Sans;
 }
 
-
 @media screen and (min-width:1350px) {
     .menuBar {
         display: none;
@@ -553,6 +552,159 @@ body {
     .pagesOfMovies>a:not( :nth-child(2)):hover {
         background-color: #6898F8;
         color: white !important;
+    }
+
+    .footerSection{
+        width: 1330px;
+        margin: 0 auto;
+        margin-top: 100px;
+        display: grid;
+        direction: rtl;
+        grid-template-columns: 3fr 1fr;
+    }
+    
+    .item1{
+        margin: 0 10px 20px 20px;
+        padding: 30px;
+        border-radius: 4px;
+        background-color: #23232b;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .setting{
+        display: flex;
+        align-items: center;
+    }
+
+    .setting>div:first-of-type{
+        background-color: #ffc10729;
+        border-radius: 4px;
+        width: 62px;
+        height: 62px;
+        text-align: center;
+        padding-top: 18px;
+    }
+
+    .setting>div:last-of-type{
+        padding: 0 10px;
+    }
+    .setting>div>li{
+        list-style: none;
+    }
+
+    .volume{
+        display: flex;
+        align-items: center;
+    }
+
+    .volume>div:first-of-type{
+        background-color: #6898f824;
+        border-radius: 4px;
+        width: 62px;
+        height: 62px;
+        text-align: center;
+        padding-top: 18px;
+    }
+
+    .volume>div:last-of-type{
+        padding: 0 10px;
+    }
+    .volume>div>li{
+        list-style: none;
+    }
+
+    .filmIcon{
+        display: flex;
+        align-items: center;
+    }
+
+    .filmIcon>div:first-of-type{
+        background-color: #89d64f26;
+        border-radius: 4px;
+        width: 62px;
+        height: 62px;
+        text-align: center;
+        padding-top: 18px;
+    }
+
+    .filmIcon>div:last-of-type{
+        padding: 0 10px;
+    }
+
+    .filmIcon>div>li{
+        list-style: none;
+    }
+
+    .item1>div>div>li{
+        cursor: pointer;
+    }
+    
+    .item2{
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+    
+    .item2>div{
+        height: 52px;
+        border-radius: 4px;
+        padding: 14px 10px;
+        cursor: pointer;
+    }
+
+    .item3{
+        display: flex;
+        padding: 0 10px;
+        padding-top: 15px;
+    }
+
+    .item3>ul{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 20px 0 0;
+    }
+
+    .item3>ul>li{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding-left: 25px;
+        margin-bottom: 15px;
+        font-size: 13px;
+        color: #c6c9cc;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+
+    .item3>ul>li:hover{
+        color: #B8daff;
+    }
+
+    .item4{
+        padding: 15px 10px 0;
+        height: 52px;
+    }
+
+    .item4>div{
+        padding: 12px;
+    }
+
+    .item4>div>span:last-of-type{
+        background-color: #89d64f26;
+        padding: 8px 14px;
+        border-radius: 3px;
+    }
+
+    .lastLine{
+        border-top: 1px solid #4b515a;
+        color: #9ba1a6;
+        font-size: 13px;
+        width: 1330px;
+        padding: 20px 0;
+        margin: 0 auto;
+        direction: rtl;
     }
 }
 
@@ -2237,7 +2389,7 @@ body {
         background-color: #23232b;
         display: flex;
         padding: 20px ;
-        margin: 0 10px 20px 20px;
+        margin: 0 10px 20px 10px;
         grid-column-gap: 5px;
         justify-content: center;
     }
@@ -2975,7 +3127,7 @@ body {
         background-color: #23232b;
         display: flex;
         padding: 20px ;
-        margin: 0 10px 20px 20px;
+        margin: 0 10px 20px 10px;
         grid-column-gap: 5px;
         justify-content: center;
     }
